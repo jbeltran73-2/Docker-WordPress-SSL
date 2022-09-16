@@ -20,8 +20,8 @@ services:
       WORDPRESS_DB_USER: ${MYSQL_USER}
       WORDPRESS_DB_PASSWORD: ${MYSQL_PASSWORD}  
       WORDPRESS_DB_NAME: ${MYSQL_DATABASE}
-      VIRTUAL_HOST: tudominio.com        #debe ser un dominio válido y DNS apuntando a este servidor
-      LETSENCRYPT_HOST: tudominio.com    #debe ser un dominio válido y DNS apuntando a este servidor   
+      VIRTUAL_HOST: tudominio.com        #cambiar al dominio que se instala
+      LETSENCRYPT_HOST: tudominio.com    #lo mismo para el certificado de SSL   
 
   mysql:
     image: mysql:8.0
